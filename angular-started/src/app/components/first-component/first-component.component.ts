@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponentComponent implements OnInit {
 
+  name: string = "Jailton";
+
+  pessoa = {
+    nome:"huguinho",
+    idade:32
+  }
+
   constructor() { }
 
   ngOnInit(): void {

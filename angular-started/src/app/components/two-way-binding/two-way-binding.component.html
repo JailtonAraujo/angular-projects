@@ -1,0 +1,18 @@
+<div class="class">
+    <h2>Two-way-ginding</h2>
+
+    <form>
+        <input type="text" [(ngModel)]="name"
+        name="=name"
+        placeholder="Digite o seu Nome">
+
+        <input type="text" [(ngModel)]="sobrenome"
+        name="sobrenome"
+        placeholder="Sobrenome">
+
+        <input type="submit" value="Enviar">
+    </form>
+    <div *ngIf="name !== '' ">
+    <p>O nome é {{name}} de {{sobrenome}}</p>
+</div>
+</div>

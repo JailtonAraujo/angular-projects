@@ -1,0 +1,15 @@
+<div *ngIf="endereco" class="class">
+    <p>CEP: {{endereco.cep}}</p>
+    <p>LOCALIDADE: {{endereco.localidade}}</p>
+    <p>LOGRADOURO: {{endereco.logradouro}}</p>
+    <p>COMPLEMENTO: {{endereco.complemento}}</p>
+    <p>BAIRRO: {{endereco.bairro}}</p>
+    <p>ENDERECO: {{endereco.uf}}</p>
+    <p>IBGE: {{endereco.ibge}}</p>
+    <p>GIA: {{endereco.gia}}</p>
+    <p>DDD: {{endereco.ddd}}</p>
+    <p>SIAFI: {{endereco.siafi}}</p>
+</div>
+
+<input type="text" name="Cep" [(ngModel)]="Cep">
+<button (click)="getEndereco();">Buscar</button>

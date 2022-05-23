@@ -16,6 +16,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { BuscaEnderecoComponent } from './components/busca-endereco/busca-endereco.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
     ListRenderComponent,
     PipesComponent,
     TwoWayBindingComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    BuscaEnderecoComponent
   ],
   imports: [
     BrowserModule,

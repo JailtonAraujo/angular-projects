@@ -2,3 +2,8 @@
     font-family: 'Courier New', Courier, monospace;
     color: cornflowerblue;
 }
+
+a {
+    margin-left: 8px;
+    margin-bottom: 10px;
+}

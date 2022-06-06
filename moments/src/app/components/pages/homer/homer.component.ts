@@ -17,6 +17,8 @@ export class HomerComponent implements OnInit {
   moments:Moment [] = [];
   baseApiUrl = environment.baseApiUrl;
 
+  searchTermo:string= "";
+
   constructor(private momentsSevrice:MomentService) { }
 
   ngOnInit(): void {
@@ -29,6 +31,15 @@ export class HomerComponent implements OnInit {
         this.moments = data;
         this.allMoments = data;
     })
+  }
+
+  serach(event:Event):void{
+    const target = event.target as HTMLInputElement;
+    const value = target.value;
+
+    this.moments = this.allMoments.filter((moment => {
+      return moment.title.toLocaleLowerCase().includes(value);
+    }))
   }
 
 }

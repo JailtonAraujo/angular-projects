@@ -55,7 +55,7 @@ a:hover{
     position: relative;
 }
 
-.search-conteiner span{
+.search-conteiner .icon{
     position: absolute;
     top: 8px;
     left: 8px;

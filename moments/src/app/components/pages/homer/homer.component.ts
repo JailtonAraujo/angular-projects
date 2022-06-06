@@ -4,6 +4,7 @@ import { MessagesService } from 'src/app/services/messages.service';
 import { Moment } from 'src/app/Moment';
 import { environment } from 'src/environments/environment';
 import { MomentService } from 'src/app/services/moment.service';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -13,6 +14,7 @@ import { MomentService } from 'src/app/services/moment.service';
 })
 export class HomerComponent implements OnInit {
 
+  fatTimes = faTimes;
   allMoments:Moment [] = [];
   moments:Moment [] = [];
   baseApiUrl = environment.baseApiUrl;

@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+.validation-erros{
+    border-left: 3px solid rgb(189, 15, 15);
+    margin-top: 0.2em;
+}
+
+.validation-erros p{
+    color: rgb(189, 15, 15);
+    margin-left: 0.2em;
+}

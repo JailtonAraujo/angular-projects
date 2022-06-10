@@ -1,0 +1,13 @@
+.content-footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #000;
+    background-color: #f5f5dc;
+}
+
+.content-footer p{
+    text-transform:uppercase ;
+    font-weight: bold;
+}

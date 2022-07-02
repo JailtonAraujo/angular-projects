@@ -2,10 +2,7 @@
     <input type="hidden" formControlName="id">
     <div class="form-group">
         <label for="title">Título</label>
-        <input type="text" 
-        placeholder="Coloque um titulo"
-        formControlName="title"
-        required>
+        <input type="text" placeholder="Coloque um titulo" formControlName="title" required>
         <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
             <p *ngIf="title.errors?.['required']">O titulo é obrigatorio!</p>
         </div>
@@ -13,9 +10,7 @@
 
     <div class="form-group">
         <label for="description">Descrição</label>
-        <textarea required 
-        placeholder="Oque aconteceu lá?"
-        formControlName="description"></textarea>
+        <textarea required placeholder="Oque aconteceu lá?" formControlName="description"></textarea>
         <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
             <p *ngIf="description.errors?.['required']">Descrição é obrigatorio</p>
         </div>

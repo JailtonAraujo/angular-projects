@@ -5,20 +5,21 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ModalModule } from 'ngx-bootstrap/modal' ;
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { TestmoduleModule } from './compoents/testmodule/testmodule.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
   ],
   imports: [
     BrowserModule,
+    TestmoduleModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
-    ModalModule.forRoot ()
+    ModalModule.forRoot (),
   ],
   providers: [],
   bootstrap: [AppComponent]

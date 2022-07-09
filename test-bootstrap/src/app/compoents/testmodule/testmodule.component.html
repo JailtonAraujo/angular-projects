@@ -1,0 +1,18 @@
+<form (submit)="submit()">
+    <label>Name:</label>
+    <input type="text" #name="ngModel" name="name" [(ngModel)]="pessoa.name" required>
+    <div *ngIf="name.invalid">
+        <span>Name obrigatorio</span>
+    </div>
+
+    <label>Age:</label>
+    <input type="number" #age="ngModel" name="age" [(ngModel)]="pessoa.age" required>
+    <div *ngIf="age.invalid">
+        <span>Idade obrigatorio</span>
+    </div>
+
+    <label>Teste change</label>
+    <input type="text" name="test" (input)="testChane($event)">
+
+    <input type="submit" value="submit" [disabled]="name.invalid || age.invalid">
+</form>
